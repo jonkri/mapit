@@ -2,7 +2,7 @@
 {% load mapit_i18n %}
 {% load url from compat %}
 
-{% block title %}{% trans "Results for" %} &ldquo;{{ postcode.postcode }}&rdquo;{% endblock title %}
+{% block title %}{% blocktrans %}Results for “{{ postcode.postcode }}”{% endblocktrans %}{% endblock title %}
 
 {% block content %}
 
@@ -32,7 +32,7 @@ E/N: {{ postcode.easting }}, {{ postcode.northing }}
     var map = new L.Map("leaflet");
     map.attributionControl.setPrefix('');
     var osm = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: 'Map © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        attribution: '{% trans "Map © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors" %}',
         maxZoom: 18
     });
 
