@@ -127,7 +127,7 @@ msgstr ""
 
 #: templates/mapit/api/area.html:46
 msgid "<em>lookup</em> related areas"
-msgstr "<em>ricerca</em> per aree correlate"
+msgstr "<em>ricerca</em> aree correlate"
 
 #: templates/mapit/api/area.html:62
 msgid ""
